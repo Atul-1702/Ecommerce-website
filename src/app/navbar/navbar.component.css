@@ -1,0 +1,97 @@
+.head
+{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 10px;
+}
+h1
+{
+  margin:0px;
+  font-size: 35px;
+  margin-top: 5px;
+}
+.head ul
+{
+    list-style: none;
+    display:flex;
+    margin:0px;
+    padding: 0px;
+}
+.head .search input
+{
+  flex:1; 
+  height:40px;
+  border:1px solid blueviolet;
+  border-right:0;
+  font-size: larger;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.head .search button
+{
+  
+  height:40px;
+  border:1px solid blueviolet;
+  border-left:0px;
+  width:15%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: blue;
+  color:white;
+}
+.head .search
+{
+  display: flex;
+  flex-grow:1;
+  margin-left:5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+.head ul li
+{
+  padding:20px;
+  font-size:larger;
+  color:blue;
+  margin-top: 0%;
+  padding-top: 15px;
+}
+.head ul li a
+{
+  cursor: pointer;
+  text-decoration: none;
+}
+.suggested-result
+{
+ position: absolute;
+ display: flex;
+ flex-direction: column;
+ z-index:15;
+ border:1px solid blueviolet;
+ top:59px;
+ border-radius: 5px;
+}
+.suggested-result li
+{
+  border:1px solid thistle;
+  color:violet !important;
+  width:533px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.cart-list
+{
+  position: relative;
+}
+.cart-quan
+{
+  position: absolute;
+  font-size: small;
+  color:white;
+  font-weight: bold;
+  background-color: navy;
+  border-radius: 50%;
+  top:7px;
+  right:18px;
+  padding-left: 4px;
+  padding-right: 4px;
+}

@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+.app
+{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.common-form
+{
+   
+    display: flex;
+    flex-direction: column;
+    width:450px;
+    border: 2px solid red;
+    padding: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border:3px solid grey;
+}
+.common-form .form-input
+{
+    margin-top: 13px;
+    padding:8px;
+    border:1px solid blueviolet;
+    border-radius: 12px;
+}
+.common-form .form-button
+{
+    padding:10px;
+    margin-top: 20px;
+    border-radius: 12px;   
+}
+.common-form-container
+{
+    width: 90vw;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
+.error-message
+{
+    background-color: rgba(255, 0, 0, 0.718);
+    padding:9px;
+    margin-top: 3px;
+    border-radius: 12px;
+    color:white;
+}

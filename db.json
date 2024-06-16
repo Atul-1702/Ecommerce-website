@@ -1,0 +1,249 @@
+{
+  "seller": [
+    {
+      "name": "Kunal",
+      "email": "kunal@gmail.com",
+      "password": "kunal123",
+      "id": 2
+    },
+    {
+      "name": "ranjan",
+      "email": "ranjan@gmail.com",
+      "password": "ranjan",
+      "id": 3
+    },
+    {
+      "name": "anuj",
+      "email": "anuj@gmail.com",
+      "password": "anuj",
+      "id": 4
+    },
+    {
+      "name": "janvi",
+      "email": "janvi@gmail.com",
+      "password": "janvi",
+      "id": 5
+    },
+    {
+      "name": "ranjan",
+      "email": "atul123@gmail.com",
+      "password": "atul@123",
+      "id": 6
+    },
+    {
+      "name": "priyanka",
+      "email": "priyanka@gmail.com",
+      "password": "priyanka",
+      "id": 7
+    },
+    {
+      "name": "ranjan",
+      "email": "anuj@gmail.com",
+      "password": "anuj",
+      "id": 8
+    }
+  ],
+  "products": [
+    {
+      "name": "Nike Shoes",
+      "price": 3500,
+      "category": "Shoe",
+      "quantity": 1,
+      "color": "Red",
+      "image": "https://cdna.artstation.com/p/assets/images/images/036/002/188/large/m-n-vinit-img-20210322-204116-186.jpg?1616482578",
+      "id": 7,
+      "description": "Nike Shoe"
+    },
+    {
+      "name": "Realme 8",
+      "price": 24999,
+      "category": "Mobile",
+      "quantity": 1,
+      "color": "Black",
+      "image": "https://i.ytimg.com/vi/DzX5mUiPBc8/maxresdefault.jpg",
+      "id": 1,
+      "description": "Smart Phone"
+    },
+    {
+      "name": "HP 15s-fq2717TU Laptop",
+      "price": "39990",
+      "color": "Silver",
+      "category": "Laptop",
+      "image": "https://static1.xdaimages.com/wordpress/wp-content/uploads/2022/09/HP-EliteBook-840-G9-rear-angle-view-blue-background.jpg",
+      "description": "HP Laptop",
+      "id": 4,
+      "quantity": 1
+    },
+    {
+      "name": "Roes Pink Glittle Sandals",
+      "price": "5555.55",
+      "color": "Pink",
+      "category": "Shoe",
+      "image": "https://m.media-amazon.com/images/I/81N3LkoA92L._AC_UY1000_.jpg",
+      "description": "Furdeour Roes Pink Glittle Dress Sandals Girls High Heels Size 1 Big Little Kid Flower Wedding",
+      "id": 14,
+      "quantity": 1
+    },
+    {
+      "name": "Dollar Vest",
+      "price": "180",
+      "color": "Black",
+      "category": "Cloth",
+      "image": "https://dollarglobal.files.wordpress.com/2019/07/66328953_2450570911675356_8744416551228145664_o.jpg",
+      "description": "Fit hai boss",
+      "id": 6,
+      "quantity": 1
+    },
+    {
+      "name": "Vivekananda Biography",
+      "price": "380",
+      "color": "Orange",
+      "category": "Book",
+      "image": "https://m.media-amazon.com/images/I/71vLNvert4L._AC_UF1000,1000_QL80_.jpg",
+      "description": "Spritual Book",
+      "id": 8,
+      "quantity": 1
+    },
+    {
+      "name": "Angular Development",
+      "price": "720",
+      "color": "White",
+      "category": "Book",
+      "image": "https://bpbonline.com/cdn/shop/products/515_Front_800x.jpg?v=1626176237",
+      "description": "A Journey to Angular Development",
+      "id": 9,
+      "quantity": 1
+    },
+    {
+      "name": "Oneplus Bullets Z2",
+      "price": "1999",
+      "color": "Black",
+      "category": "Earphones",
+      "image": "https://mymec.in/wp-content/uploads/2022/11/New-Project-2022-11-07T171051.389.jpg",
+      "description": "Oneplus Bullets Z2 in Ear Earphones with Mic Bluetooth Wireless Earbuds",
+      "id": 10,
+      "quantity": 1
+    },
+    {
+      "name": "STYLE Pink Shoulder Bag",
+      "price": "380",
+      "color": "Pink",
+      "category": "Bag",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/khavrm80/sling-bag/d/p/w/women-hand-bag-ls-02-pink-shoulder-bag-like-style-original-imafxcyghbng2smq.jpeg?q=20&crop=false",
+      "description": "LIKE STYLE Pink Shoulder Bag Women hand bag",
+      "id": 11
+    },
+    {
+      "name": "School Bags for Boys",
+      "price": "1910",
+      "color": "Blue",
+      "category": "Bag",
+      "image": "https://funblast.in/cdn/shop/files/718UB2iZFlL._UL1500.jpg?v=1694069234",
+      "description": "School Bags for Boys – Space Print Bagpack for Kids, College Bag, Casual Bag, School Bag, Backpack ",
+      "id": 12,
+      "quantity": 1
+    },
+    {
+      "name": "T-Shirts Full Sleeves",
+      "price": "450",
+      "color": "Navyblue",
+      "category": "Cloth",
+      "image": "https://classicsolidtee.in/cdn/shop/files/8.jpg?v=1694415930&width=1445",
+      "description": "Collar T-Shirts Full Sleeves – cLaSsIc SoLiD tEe",
+      "id": 13,
+      "quantity": 1
+    },
+    {
+      "name": "Denim Jeans for Girls",
+      "price": "3999",
+      "color": "Black",
+      "category": "Cloth",
+      "image": "https://images.bewakoof.com/t640/women-s-blue-straight-fit-high-rise-jeans-blue1-625178-1706594036-1.jpg",
+      "description": "Women's Jeans - Buy Denim Jeans for Women & Girls Online",
+      "id": 15
+    },
+    {
+      "name": "Shirts for Men",
+      "price": "1799",
+      "color": "crimson",
+      "category": "Cloth",
+      "image": "https://imgmedia.lbb.in/media/2023/05/6474602016cbc35fdad2cd7f_1685348384396.jpg",
+      "description": "Best Types of Shirts for Men That Are Wardrobe Staples",
+      "id": 16,
+      "quantity": 1
+    },
+    {
+      "name": "Kanjeevaram Silk Saree",
+      "price": "4999",
+      "color": "Violet",
+      "category": "Cloth",
+      "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/22536176/2023/3/28/a42e89de-df91-4eca-9cb0-dd715862897f1679995217167kaliniPurpleSilkBlendEthnicWovenDesignFestiveSareewithMatchi1.jpg",
+      "description": "Kanjeevaram Silk Saree - Buy Kanjeevaram Silk Saree online in India",
+      "id": 17
+    }
+  ],
+  "user": [
+    {
+      "name": "prema",
+      "email": "prema@gmail.com",
+      "password": "prema",
+      "id": 1
+    },
+    {
+      "name": "Disha",
+      "email": "disha@gmail.com",
+      "password": "disha",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "name": "Realme 10 pro ",
+      "price": "18999",
+      "color": "Skyblue",
+      "category": "Mobile",
+      "image": "https://image01.realme.net/general/20221125/1669360530169.png.webp",
+      "description": "Realme 5g phone",
+      "quantity": 1,
+      "productid": 2,
+      "userid": 13,
+      "id": 1
+    },
+    {
+      "name": "Realme 8",
+      "price": 24999,
+      "category": "Mobile",
+      "quantity": 1,
+      "color": "Black",
+      "image": "https://i.ytimg.com/vi/DzX5mUiPBc8/maxresdefault.jpg",
+      "description": "Smart Phone",
+      "productid": 1,
+      "userid": 13,
+      "id": 2
+    },
+    {
+      "name": "HP 15s-fq2717TU Laptop",
+      "price": 119970,
+      "color": "Silver",
+      "category": "Laptop",
+      "image": "https://static1.xdaimages.com/wordpress/wp-content/uploads/2022/09/HP-EliteBook-840-G9-rear-angle-view-blue-background.jpg",
+      "description": "HP Laptop",
+      "quantity": 3,
+      "productid": 4,
+      "userid": 13,
+      "id": 4
+    },
+    {
+      "name": "Vivekananda Biography",
+      "price": "380",
+      "color": "Orange",
+      "category": "Book",
+      "image": "https://m.media-amazon.com/images/I/71vLNvert4L._AC_UF1000,1000_QL80_.jpg",
+      "description": "Spritual Book",
+      "quantity": 1,
+      "productid": 8,
+      "userid": 1,
+      "id": 5
+    }
+  ]
+}

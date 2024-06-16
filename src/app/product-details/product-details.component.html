@@ -1,0 +1,29 @@
+<div class="container">
+<div class="group">
+    <div class="first"></div>
+    <div class="second border" >
+     <img src={{product.image}}  alt="" id="image-set">
+    </div>
+    <div class="third ">
+     <h3 class="details extra-details">{{product.name}}</h3>
+     <div class="details"><b>Price: </b>{{product.price|currency:'INR'}}</div>
+     <div class="details mb-1"><b>Color</b></div>
+     <div id="color-control" [style.backgroundColor]="product.color"></div>
+     <div class="details mt-2"><b>Category: </b>{{product.category}}</div>
+     <div class="details" style="font-size: large;"><b>Description: </b>{{product.description}}</div>
+     <div *ngIf="quantity_control">
+     <button class="control-button" (click)="product_quantity(-1)">-</button>
+     <input id="input-control" type="text" disabled [value]="p_quantity">
+     <button class="control-button" (click)="product_quantity(1)">+</button><br>
+    </div>
+     <div *ngIf="p_quantity<max_quantity">
+     <button routerLink="/cart" *ngIf="!add_remove" class="btn btn-primary mt-4 button-text">Go to cart</button>
+     <button class="btn btn-primary ms-2 mt-4 button-text" *ngIf="add_remove" (click)="add_to_cart(product.id)">Add to cart</button>
+     <button class="btn btn-danger ms-2 mt-4 button-text" *ngIf="!add_remove" (click)="remove_to_cart(product.id)">Remove to cart</button>
+    </div>
+    <div *ngIf="p_quantity==max_quantity">
+     <button class="btn btn-danger mt-4" [style.width]="'200px'" disabled>Out of Stock</button>
+    </div>
+    </div>
+</div>
+</div>

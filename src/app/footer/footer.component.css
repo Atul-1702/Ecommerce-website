@@ -1,0 +1,88 @@
+
+.main-container
+{
+    width: 90vw;
+    background-color: rgb(70, 70, 70);
+    border:1px solid white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.upper-box
+{
+    margin:50px 150px;
+    color:rgb(246, 246, 246);
+    height:100%;
+    display: flex;
+   
+}
+.title
+{
+    margin-bottom: 10px;
+}
+.about
+{
+    flex:3;
+}
+.information
+{
+    flex:2;
+}
+.contact
+{
+    flex:2;
+}
+.extra
+{
+    flex:1;
+}
+.lower-box
+{
+    background-color: rgb(54, 54, 54);
+    color:rgb(113, 113, 113);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius:10px ;
+}
+i
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.facebook
+{
+    color:rgb(58, 88, 147);
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.instagram
+{
+    color:rgb(149, 48, 115);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.twitter
+{
+    color:white;
+    background-color: rgb(91, 176, 233);
+    border-radius: 50%;
+    padding: 2px;
+    font-size:22px ;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.youtube
+{
+    color:red;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.phone
+{
+    color:skyblue;
+    font-size: large;
+    margin-right: 12px;
+}

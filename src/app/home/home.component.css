@@ -1,0 +1,50 @@
+.picsum-img-wrapper img
+{
+    margin-top: 30px;  
+    object-fit:fill;
+    border:1px solid yellow;
+    height:640px;
+    width:100%;
+}
+.carousel-caption
+{
+    color:deepskyblue;
+}
+.footer
+{
+    font-weight:500;
+    font-size: 20px;
+   display:flex;
+   justify-content: space-between;
+   margin-bottom: 3px;
+   margin-right:3px;
+   margin-left: 3px;
+}
+.content
+{
+    text-align: center;
+}
+#head
+{
+    color:blueviolet;
+    border:2px solid blueviolet;
+    padding: 0px;
+}
+.footer button
+{
+    color:blueviolet;
+    font-weight: bold;
+    padding: 2px;
+}
+
+hr
+{
+    width:99%;
+    
+}
+.trending
+{
+    background-color: rgba(0, 0, 0, 0.645);
+    color:white;
+    padding: 10px;
+}

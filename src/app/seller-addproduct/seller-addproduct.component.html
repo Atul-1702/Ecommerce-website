@@ -1,0 +1,13 @@
+<div class="common-form-container">
+<form class="common-form" #formdata="ngForm" (ngSubmit)="add_product(formdata.value)">
+    <h1>Add Product</h1>
+    <div *ngIf="add_status" [style.color]="'green'">{{add_status}}</div>
+    <input ngModel class="form-input" type="text" placeholder="Enter Product Name" name="name">
+    <input ngModel class="form-input" type="text" placeholder="Enter Price" name="price">
+    <input ngModel class="form-input" type="text" placeholder="Enter Color" name="color">
+    <input ngModel class="form-input" type="text" placeholder="Enter Category" name="category">
+    <input ngModel class="form-input" type="text" placeholder="Enter image url" name="image">
+    <textarea ngModel class="form-input" name="description" id="" cols="30" rows="2" placeholder="Enter Description"></textarea>
+    <button  class="btn btn-primary form-button">Add</button>
+</form>
+</div>

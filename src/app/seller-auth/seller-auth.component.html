@@ -1,0 +1,29 @@
+<div class="common-form-container">
+<div>
+    <form #signup="ngForm" (ngSubmit)="sign_up(signup.value)" class="common-form" *ngIf="flag">
+        <h1>Seller Signup</h1>
+        <input ngModel required class="form-input" type="text" placeholder="Enter Name" name="name">
+        <div *ngIf="signup.controls['name']?.touched&&signup.controls['name'].errors" class="error-message">Name is required</div>
+        <input ngModel required email type="text" class="form-input" placeholder="Enter Email" name="email">
+        <div *ngIf="signup.controls['email']?.touched&&signup.controls['email'].errors?.['required']" class="error-message">Email is required</div>
+        <div *ngIf="signup.controls['email']?.touched&&signup.controls['email'].errors?.['email']" class="error-message">Invalid email format</div>
+        <input ngModel required type="password" class="form-input" placeholder="Enter Password" name="password">
+        <div *ngIf="signup.controls['password']?.touched&&signup.controls['password'].errors" class="error-message">Password is required</div>
+        <button [disabled]="signup.invalid" class="btn btn-primary form-button">Submit</button>
+        <label style="margin-top:20px;font-size:medium;" for="">Already have an account? <a (click)="form_change()" style="color:blue;font-weight: bolder;cursor:pointer">Login</a></label>
+    </form>
+</div>
+<div *ngIf="!flag">
+    <form #login="ngForm" (ngSubmit)="login_seller(login.value)" class="common-form">
+        <h1>Seller Login</h1>
+        <div class="error-message" *ngIf="this.Service.login_help">Email or Password is wrong</div>
+        <input ngModel required email #email="ngModel" type="text" class="form-input" placeholder="Enter Email" name="email">
+        <div *ngIf="login.controls['email']?.touched&&login.controls['email'].errors?.['required']" class="error-message">Email is required</div>
+        <div *ngIf="login.controls['email']?.touched&&login.controls['email'].errors?.['email']" class="error-message">Invalid email format</div>
+        <input ngModel required #password="ngModel" type="text" class="form-input" placeholder="Enter Password" name="password">
+        <div *ngIf="login.controls['password']?.touched&&login.controls['password'].errors" class="error-message">Password is required</div>
+        <button [disabled]="login.invalid" class="btn btn-primary form-button">Submit</button>
+        <label style="margin-top:20px;font-size:medium;">Don't have an account? <a (click)="form_change()" style="color:blue;font-weight: bolder;cursor:pointer">Signup</a></label>
+    </form>
+</div>
+</div>

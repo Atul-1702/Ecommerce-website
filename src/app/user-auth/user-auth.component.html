@@ -1,0 +1,24 @@
+<div class="common-form-container">
+<form class="common-form" [formGroup]="FormData"  (ngSubmit)="submit_data()" *ngIf="form_toggle">
+    <h1>User Signup</h1>
+    <input formControlName="name" name="name" class="form-input" type="text" placeholder="Enter Name">
+    <div class="error-message" *ngIf="FormData.get('name')?.touched&&FormData.get('name')?.errors">Name is required</div>
+    <input formControlName="email" name="email" type="text" class="form-input" placeholder="Enter Email">
+    <div class="error-message" *ngIf="FormData.get('email')?.touched&&FormData.get('email')?.errors?.['required']">Email is required</div>
+    <div class="error-message" *ngIf="FormData.get('email')?.touched&&FormData.get('email')?.errors?.['email']">Invalid email format</div>
+    <input formControlName="password" name="password" class="form-input" type="password" placeholder="Enter Password">
+    <div class="error-message" *ngIf="FormData.get('password')?.touched&&FormData.get('name')?.errors">Password is required</div>
+    <button [disabled]="FormData.invalid" class="btn btn-primary form-button">Submit</button>
+    <label style="margin-top:20px;font-size:medium;" for="">Already have an account? <a (click)="form_change()" style="color:blue;font-weight: bolder;cursor:pointer">Login</a></label>
+</form>
+<form class="common-form" #login_form="ngForm" (ngSubmit)="check_user(login_form.value)" *ngIf="!form_toggle">
+        <h1>User Login</h1>
+        <div *ngIf="check_cred" class="error-message">Email or Password is wrong</div>
+        <input ngModel required email #email="ngModel" name="email" type="text" class="form-input" placeholder="Enter Email">
+        <div class="error-message" *ngIf="email.touched&&email.invalid">Invalid Email</div>
+        <input required ngModel #password="ngModel" name="password" class="form-input" type="password" placeholder="Enter Password">
+        <div class="error-message" *ngIf="password.touched&&password.invalid">Invalid Password</div>
+        <button [disabled]="login_form.invalid" class="btn btn-primary form-button">Submit</button>
+        <label style="margin-top:20px;font-size:medium;" for="">Don't have an account? <a (click)="form_change()" style="color:blue;font-weight: bolder;cursor:pointer">Signup</a></label>
+</form>
+</div>

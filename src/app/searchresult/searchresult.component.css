@@ -1,0 +1,24 @@
+#image-set {
+  width: 200px;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.details {
+  margin-bottom: 15px;
+  font-size: larger;
+}
+.new-name {
+  font-size: 23px;
+  font-weight: bolder;
+}
+a {
+  text-decoration: none;
+}
+.line
+{
+    height:1px;
+    background-color: darkred;
+    text-align: center;
+}

@@ -1,0 +1,67 @@
+
+.container
+{
+    margin-top: 55px;
+}
+.details
+{   
+    font-size: larger;
+    margin-bottom: 15px;
+}
+.extra-details
+{
+    font-size: 35px; 
+    color:rgb(86, 61, 124);
+}
+.common-button
+{
+  font-size: large;
+  padding:7px;
+  margin-top: 12px;
+}
+.control-button
+{
+    font-size: larger;
+   
+    padding: 5px 12px;
+}
+#input-control
+{
+    width:50px;
+    padding: 5px 12px;
+    font-size: larger;
+    font-weight:bold;
+}
+#color-control
+{
+    width: 50px;
+    border-radius:50%;
+    border:2px solid black;
+    height:50px;
+    
+}
+.group
+{
+    display: flex;
+}
+.second
+{
+    border-radius: 25px;
+    height:500px;
+}
+#image-set
+{
+   
+    width:600px;
+    height:100%;
+    border-radius: 25px;
+}
+.button-text
+{
+    font-size: larger;
+}
+.third
+{
+    margin-left: 150px;
+    margin-top: 20px;
+}

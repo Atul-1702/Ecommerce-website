@@ -1,0 +1,42 @@
+
+<div class="empty-cart" *ngIf="product==undefined||product?.length==0">
+<div class="inner-container">
+ <div><img src="https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="cart empty"></div>
+  <div class="mt-2">Your cart is empty!</div>
+  <div class="mt-2">Add items to it now.</div>
+  <button routerLink="/" class="mt-3 btn btn-primary empty-button">Shop now</button>
+</div>
+</div>
+<div *ngIf="product&&product.length>0" [class]="class_style" class="msg">{{del_msg}}</div>
+<div class="row">
+     <div class="col-sm-1"></div>
+     <div class="col-sm-6 item">
+     <div class="row data-part" *ngFor="let item of product">
+     <a [routerLink]="item.productid?['/product-detail',item.productid]:['/product-detail',item.id]"><img class="col-sm-3" src={{item.image}} alt="" (click)="product_quantity(item.productid?item.productid:item.id,item.quantity)"></a>
+     <div class="col-sm-5">
+      <h5>{{item.name}}</h5>
+      <h5>{{item.price|currency:'INR'}}</h5>
+      <button class="btn btn-primary" (click)="remove_item(item.id,item.productid?item.productid:-1)">Remove</button>
+    </div>
+    <div id="quantity">
+        <button (click)="update_quantity(-1,item.id,input1.value)">-</button>
+        <input #input1 id="input-control" type="text" [value]="item.quantity" disabled>
+        <button (click)="update_quantity(1,item.id,input1.value)">+</button>
+    </div>
+</div>
+</div>
+    <div class="col-sm-1"></div>
+    <div *ngIf="product&&product.length>0" class="col-sm-3 summary">
+      <h3>Price details</h3>
+      <ul>
+        <li id="first"><span>Price</span><span>{{this.summary.price|currency:'INR'}}</span></li>
+        <li><span>Tax</span><span>{{this.summary.tax|currency:'INR'}}</span></li>
+        <li [style]="del_sty"><span>Delivery</span><span>{{this.summary.delivery|currency:'INR'}}</span></li>
+        <li id="last"><span>Discount</span><span>-{{this.summary.discount|currency:'INR'}}</span></li>
+        <li id="total"><span>Total Amount</span><span>{{this.summary.total|currency:'INR'}}</span></li>
+      </ul>
+      <button routerLink="/payment-page" [queryParams]="{amount:summary.total}" *ngIf="userLogged" class="btn btn-primary">Proceed to checkout</button>
+      <button routerLink="/user-auth" [queryParams]="{cartpage:true}" *ngIf="!userLogged" class="btn btn-primary">Login to proceed</button>
+    </div>
+</div>
+     

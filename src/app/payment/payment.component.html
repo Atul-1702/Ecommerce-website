@@ -1,0 +1,42 @@
+<div class="payment-container">
+ <div class="heading">Payment Gateway</div>
+ <div class="amount common-design">Amount Rs.{{amount}}</div>
+ <div class="method common-design">Choose a payment method</div>
+  <div class="payment">
+      <ul class="payment-type">
+        <li [ngClass]="{selected:paymentMethod=='card'}" (click)="selectOption('card')">Debit/Credit Cards</li>
+        <li [ngClass]="{selected:paymentMethod=='upi'}" (click)="selectOption('upi')">UPI</li>
+        <li [ngClass]="{selected:paymentMethod=='cod'}" (click)="selectOption('cod')">Cash on Delivery</li>
+      </ul>
+    <div class="extra"></div>
+    <div class="payment-open" [ngSwitch]="paymentMethod">
+      <div *ngSwitchCase="'card'">
+           <div class="common-form-container" [style]="{width:'35vw',height:'auto',backgroundColor:'rgb(241, 243, 246)',marginTop:'20px',marginBottom:'20px'}">
+           <form class="common-form">
+            <h1>Card Details</h1>
+             <input class="form-input" type="text" id="card-number" name="Card Number" placeholder="Card number">
+             <input class="form-input" type="text" name="card-name" id="card-name" placeholder="Card name">
+             <input class="form-input" type="text" name="cvv" id="cvv" placeholder="Cvv number">
+             <input class="form-input" type="text" id="expiry" placeholder="month">
+             <input class="form-input" type="text" id="expiry" placeholder="year">
+             <button (click)="orderPlaced()" class="btn btn-primary form-button">Pay Now</button>
+           </form>
+        </div>
+        </div>
+      <div *ngSwitchCase="'upi'">
+           <div class="common-form-container" [style]="{width:'35vw',height:'auto',backgroundColor:'rgb(241, 243, 246)',marginTop:'20px',marginBottom:'20px'}">
+           <form class="common-form">
+             <h1>UPI Details</h1>
+             <input type="text" id="upi-id" class="form-input" placeholder="UPI ID">
+             <button (click)="orderPlaced()" class="btn btn-primary form-button">Pay Now</button>
+           </form>  
+        </div>            
+      </div>
+      <div *ngSwitchCase="'cod'" class="cod">
+          <label for=""><b>Payment online for hassle free services.</b></label><br>
+          <button (click)="orderPlaced()" class="btn btn-primary form-button">Place order</button>
+      </div>
+    </div>    
+  </div>
+</div>
+

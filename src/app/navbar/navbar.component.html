@@ -1,0 +1,30 @@
+<nav class="head">
+    <h1 routerLink="/" style="cursor: pointer;color:rgb(172, 44, 117)">Shopping Corner</h1>
+    <div *ngIf="toggle" class="search">
+        <input search- #inputdata type="text"  (keyup)="search_product($event.target)" (blur)="empty()">
+       <button class="search-button" (click)="send_query(inputdata.value)">Search</button>
+        <ul class="suggested-result">
+           <li *ngFor="let get of searchproducts" (mousedown)="send_query(get.name)"><a>{{get.name}}</a></li>
+        </ul>
+    </div>    
+    <div [ngSwitch]="toggle">
+    <ul class="list" *ngSwitchCase="'normal'">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="/seller-auth">Seller</a></li>
+        <li><a routerLink="/user-auth">Login</a></li>
+        <li class="cart-list"><a routerLink="/cart"><i  style="font-size: larger;color:darkslategray" class="fa-solid fa-cart-shopping"></i><span class="cart-quan">{{user.cart_q}}</span></a></li>
+    </ul>
+    <ul class="list" *ngSwitchCase="'seller'">
+        <li><a routerLink="seller-add-product">Add Product</a></li>
+        <li><a routerLink="seller-sign-success">List</a></li>
+        <li (click)="logout()" [style.cursor]="'pointer'">Logout</li>
+        <li><a>{{data[0].name}}</a></li>
+    </ul>
+    <ul class="list" *ngSwitchCase="'customer'">
+        <li><a routerLink="/">Home</a></li>
+        <li><a >{{user_data.name}}</a></li>
+        <li><a routerLink="user-auth" (click)="delete_user()">Logout</a></li>
+        <li class="cart-list"><a routerLink="/cart"><i style="font-size: larger;color:darkslategray" class="fa-solid fa-cart-shopping"></i><span class="cart-quan">{{user.cart_q}}</span></a></li>
+    </ul>
+</div>
+</nav>

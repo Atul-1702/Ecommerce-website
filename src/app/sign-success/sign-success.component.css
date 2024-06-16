@@ -1,0 +1,44 @@
+.table-container
+{
+    width: 90vw;
+    background-color: rgb(241, 243, 246);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+}
+table
+{
+    
+    border-collapse: collapse;
+    width:60%;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    
+    
+}
+table td,table th
+{
+    border: 1px solid black;
+    font-size: large;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+img
+{
+    height: 100px;
+    width: 100px;
+}
+p
+{
+    text-align: center;
+    color: red;
+    margin-top: 50px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-bottom: 10px;
+}
